@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psicologia Clínica com Dênia Virgínia</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- (1) Links e Fotos primeiro: criam variáveis globais -->
+  <script src="links.js" defer></script>
+  <script src="fotos.js" defer></script>
+
+  <!-- (2) JS principal por último -->
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar" role="banner">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img class="brand__logo" src="Denia logo minimalista lisa.png" alt="Logo Dênia Virgínia Psicóloga Clínica" />
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__link" href="#inicio">Início</a>
+        <a class="nav__link" href="#sobre">Sobre</a>
+        <a class="nav__link" href="#agenda">Agenda</a>
+        <a class="nav__link" href="#feedbacks">Feedbacks</a>
+        <a class="nav__link nav__cta" href="#contato">Contato</a>
+      </nav>
+
+      <button class="nav__burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <a class="mobileNav__link" href="#inicio">Início</a>
+      <a class="mobileNav__link" href="#sobre">Sobre</a>
+      <a class="mobileNav__link" href="#agenda">Agenda</a>
+      <a class="mobileNav__link" href="#feedbacks">Feedbacks</a>
+      <a class="mobileNav__link mobileNav__cta" href="#contato">Contato</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main id="inicio" class="hero" role="main">
+    <div class="hero__bg" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="hero__card">
+        <p class="badge">Neurodivergência • TDAH feminino • Avaliação</p>
+        <h1>Psicologia Clínica com <span class="accent">Dênia Virgínia</span></h1>
+        <p class="hero__subtitle">
+          Um cuidado clínico sofisticado, humano e estratégico — com foco em compreensão profunda do funcionamento emocional e neurobiológico.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#agenda">Ver horários</a>
+          <a class="btn btn--ghost" href="#sobre">Conhecer a profissional</a>
+        </div>
+
+        <div class="hero__metrics" aria-label="Indicadores de autoridade">
+          <div class="metric">
+            <span class="metric__num" data-count="12">0</span>
+            <span class="metric__label">anos de atuação</span>
+          </div>
+          <div class="metric">
+            <span class="metric__num" data-count="1500">0</span>
+            <span class="metric__label">sessões clínicas</span>
+          </div>
+          <div class="metric">
+            <span class="metric__num" data-count="4">0</span>
+            <span class="metric__label">áreas-chave</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero__side">
+        <div class="glass">
+          <h3>Especialidades em foco</h3>
+          <ul class="pillList" aria-label="Especialidades">
+            <li class="pill">TDAH em mulheres</li>
+            <li class="pill">TEA nível 1 (adultos)</li>
+            <li class="pill">Regulação emocional</li>
+            <li class="pill">Identidade e autoestima</li>
+          </ul>
+
+          <div class="social" aria-label="Redes sociais">
+            <a class="iconBtn" id="instagram_sobre" href="#" target="_blank" rel="noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>
+            </a>
+            <a class="iconBtn" id="youtube_sobre" href="#" target="_blank" rel="noreferrer" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+            </a>
+            <a class="iconBtn" id="facebook_sobre" href="#" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.2c0-.9.3-1.5 1.6-1.5H16.7V5.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6V11H7.3v3h2.4v8h3.8z"/></svg>
+            </a>
+            <a class="iconBtn" id="whatsapp_sobre" href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15l-1.1 4.1 4.2-1.1A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.5.7.7-2.4-.2-.3A8 8 0 1 1 20 12a8 8 0 0 1-8 8zm4.7-6.2c-.3-.2-1.6-.8-1.8-.9s-.4-.2-.6.2-.7.9-.8 1.1-.3.2-.6.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3s-1 1-1 2.5 1 2.9 1.1 3.1 2 3.1 4.8 4.3c.7.3 1.2.4 1.6.5.7.2 1.4.2 1.9.1.6-.1 1.6-.7 1.8-1.3s.2-1.1.2-1.2-.2-.2-.5-.4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="scrollHint" aria-hidden="true"><span></span></div>
+  </main>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Sobre Dênia</h2>
+        <p class="muted">
+          Psicóloga Clínica com atuação focada em neurodivergência, saúde emocional e reconstrução identitária.
+        </p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Quem eu sou</h3>
+          <p>Dênia Virgínia é Psicóloga Clínica com atuação dedicada ao cuidado de adolescentes e adultos, com foco em <strong>mulheres neurodivergentes</strong> (TDAH, TEA nível 1 e altas habilidades), ansiedade, burnout, baixa autoestima e padrões de autocrítica. Sua prática integra psicoeducação clara, escuta qualificada e intervenções orientadas por objetivos — unindo profundidade emocional com estratégias práticas para organização, limites e regulação. O atendimento prioriza compreensão da história de vida, do contexto familiar e do funcionamento neurobiológico, promovendo autonomia, identidade e bem-estar sustentável.</p>
+
+          <div class="divider"></div>
+
+          <h4>Prioridades no atendimento</h4>
+          <ul class="checklist">
+            <li>Psicoeducação clara e validante (sem rótulos apressados)</li>
+            <li>Regulação emocional e fortalecimento de autoconsciência</li>
+            <li>Estratégias executivas: rotina, organização e limites</li>
+            <li>Reconstrução identitária e autonomia relacional</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <div class="socialRow">
+            <span class="muted">Me acompanhe:</span>
+            <div class="social social--row">
+              <a class="linkPill linkPill--icon" id="instagram_header" href="#" target="_blank" rel="noreferrer" aria-label="Instagram"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg><span class="sr-only">Instagram</span></a>
+              <a class="linkPill linkPill--icon" id="youtube_header" href="#" target="_blank" rel="noreferrer" aria-label="YouTube"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg><span class="sr-only">YouTube</span></a>
+              <a class="linkPill linkPill--icon" id="facebook_header" href="#" target="_blank" rel="noreferrer" aria-label="Facebook"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.2c0-.9.3-1.5 1.6-1.5H16.7V5.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6V11H7.3v3h2.4v8h3.8z"/></svg><span class="sr-only">Facebook</span></a>
+              <a class="linkPill linkPill--icon linkPill--accent" id="whatsapp_header" href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15l-1.1 4.1 4.2-1.1A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.5.7.7-2.4-.2-.3A8 8 0 1 1 20 12a8 8 0 0 1-8 8zm4.7-6.2c-.3-.2-1.6-.8-1.8-.9s-.4-.2-.6.2-.7.9-.8 1.1-.3.2-.6.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3s-1 1-1 2.5 1 2.9 1.1 3.1 2 3.1 4.8 4.3c.7.3 1.2.4 1.6.5.7.2 1.4.2 1.9.1.6-.1 1.6-.7 1.8-1.3s.2-1.1.2-1.2-.2-.2-.5-.4z"/></svg><span class="sr-only">WhatsApp</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto ao lado (foto_sobre_1) -->
+        <div class="card card--soft aboutPhotoCard">
+          <div class="aboutPhotoCard__frame">
+            <img id="aboutPhoto" class="aboutPhotoCard__img" src="" alt="Foto de Dênia Virgínia" />
+            
+          </div>
+
+          <div class="divider"></div>
+
+          <h3>Clareza • Acolhimento • Direção</h3>
+          <p class="muted">
+            Uma apresentação profissional que combina estética sofisticada com experiência interativa — pronta para personalização.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agenda" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Agenda</h2>
+        <p class="muted">
+          No momento, não há horários disponíveis para agendamento direto.
+        </p>
+      </div>
+
+      <div class="card waitlistCard">
+        <div class="waitlistCard__inner">
+          <div>
+            <h3>Sem horários disponíveis</h3>
+            <p class="muted">
+              Clique no botão abaixo para entrar na <strong>fila de espera</strong> e falar com a equipe pelo WhatsApp.
+            </p>
+          </div>
+
+          <a class="btn btn--primary" href="#contato" aria-label="Ir para a seção de contato">
+            Entrar na fila de espera
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Feedbacks -->
+  <section id="feedbacks" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Feedbacks</h2>
+        <p class="muted">Depoimentos reais (exemplos) com foco em transformação e qualidade clínica.</p>
+      </div>
+
+      <div class="grid3">
+        <article class="card review">
+          <div class="review__top">
+            <strong>Maria Isabela</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Excelente, Dênia me ajudou a superar minhas inseguranças e ansiedades, antes eu era
+            garota que não tinha certeza se conseguiria concluir o ensino médio e hoje estou formada e na faculdade fazendo 
+            o curso dos meus sonhos”</p>
+        </article>
+
+        <article class="card review">
+          <div class="review__top">
+            <strong>Belby Magalhães</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Excenlente profissional, gostei muito da experiência que tive com ela.”</p>
+        </article>
+
+        <article class="card review">
+          <div class="review__top">
+            <strong>Bruna L.</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Me senti vista. O jeito que ela organiza a sessão traz clareza e segurança. Eu finalmente consegui avançar.”</p>
+        </article>
+
+        <article class="card review">
+          <div class="review__top">
+            <strong>Dalila Alencar</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Uma profissional extremamente competente e humana. Minha filha de 12 anos iniciou a 
+            a terapia em um momento que não entendíamos alguns comportamentos e ela foi acolida pela DÊNIA com uma sensibilidade e dedicação.
+            Um ponto importante foi a identificação do TDAH durante o processo terapêutico, o que trouxe clareza para muitas questões que não 
+            entendíamos. Isso nos permitiu buscar as orientações e oferecer o suporte para que ela se desenvovla com mais segurança e autoestima.
+            Sou muito grata com todo cuidado, dedicação e compromisso com a minha família. Recomendo de olhos fechados!”</p>
+        </article>
+
+        <article class="card review">
+          <div class="review__top">
+            <strong>zeny Mendes</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Excelente! A Doutora Dênia é uma pessoa innexplicável! Consegue transformar ocasioões de extremo stress, em conforto
+            e tranquilidade. Super indico e recomendo. Haja vista que todos nós precisamos de terapia ao longo da vida! A doutora Dênia faz
+            a diferença na vida das pessoas que passam por ela. A palavra que resume meu sentimento pela excelencia do trabalho dela é gratidão!!”</p>
+        </article>
+
+        <article class="card review">
+          <div class="review__top">
+            <strong>Débora Barbosa</strong>
+            <div class="stars" aria-label="5 estrelas">★★★★★</div>
+          </div>
+          <p class="muted">“Já fazem alguns meses que a D~enia cuida de mim, de fato cuida, não se tornou apenas minha terapeuta, e sim, 
+            uma pessoa que olho com amizade e adimiração. Me acolheu quando mais precisava, me ouviu com carinho, atenção e de lá para cá, não sei
+            mais o que é uma semana sem teraipa, pois se tourou u melhor compromisso da semana, as vezes, até 2 vezes na semana. 
+            Além do aombiente super acolhedor que ela atende, a hora voa, de tão boa que a conversa flui e eu poderia ficar até mais horas haha, 
+            a forma como ela aborda os pontos precisamos trabalhar, é de forma leve, A indico de olhos fechados.”</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contato</h2>
+        <p class="muted">Envie uma mensagem. Após enviar, aparecerá o botão do WhatsApp (com hyperlink).</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Formulário</h3>
+
+          <div id="contactArea">
+            <form id="contactForm" class="form">
+              <label class="field">
+                <span>Nome</span>
+                <input type="text" name="nome" placeholder="Seu nome" required />
+              </label>
+
+              <label class="field">
+                <span>E-mail</span>
+                <input type="email" name="email" placeholder="seuemail@exemplo.com" required />
+              </label>
+
+              <label class="field">
+                <span>Mensagem</span>
+                <textarea name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">Enviar</button>
+              <p class="muted small">* Este formulário é demonstrativo (sem backend). Personalize conforme necessidade.</p>
+            </form>
+          </div>
+        </div>
+
+        <div class="card card--soft">
+          <h3>Canais</h3>
+          <p class="muted">
+            Você pode configurar os links no arquivo <strong>links.js</strong>. Os botões abaixo usam os mesmos IDs/links.
+          </p>
+
+          <div class="divider"></div>
+
+          <div class="social social--big" aria-label="Canais de contato">
+            <a class="bigIcon bigIcon--icon" id="instagram_contato" href="#" target="_blank" rel="noreferrer" aria-label="Instagram"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.3-2.1a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg><span class="sr-only">Instagram</span></a>
+            <a class="bigIcon bigIcon--icon" id="youtube_contato" href="#" target="_blank" rel="noreferrer" aria-label="YouTube"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.6 12 4.6 12 4.6s-5.6 0-7.5.5A3 3 0 0 0 2.4 7.2 31.2 31.2 0 0 0 2 12a31.2 31.2 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.9.5 7.5.5 7.5.5s5.6 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.2 31.2 0 0 0 22 12a31.2 31.2 0 0 0-.4-4.8zM10 15.5v-7l6 3.5-6 3.5z"/></svg><span class="sr-only">YouTube</span></a>
+            <a class="bigIcon bigIcon--icon" id="facebook_contato" href="#" target="_blank" rel="noreferrer" aria-label="Facebook"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3H13.5V9.2c0-.9.3-1.5 1.6-1.5H16.7V5.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6V11H7.3v3h2.4v8h3.8z"/></svg><span class="sr-only">Facebook</span></a>
+            <a class="bigIcon bigIcon--icon bigIcon--accent" id="whatsapp_contato" href="#" target="_blank" rel="noreferrer" aria-label="WhatsApp"><svg class="iconSvg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15l-1.1 4.1 4.2-1.1A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.5.7.7-2.4-.2-.3A8 8 0 1 1 20 12a8 8 0 0 1-8 8zm4.7-6.2c-.3-.2-1.6-.8-1.8-.9s-.4-.2-.6.2-.7.9-.8 1.1-.3.2-.6.1a6.6 6.6 0 0 1-1.9-1.2 7 7 0 0 1-1.3-1.6c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.6-1.5-.8-2-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3s-1 1-1 2.5 1 2.9 1.1 3.1 2 3.1 4.8 4.3c.7.3 1.2.4 1.6.5.7.2 1.4.2 1.9.1.6-.1 1.6-.7 1.8-1.3s.2-1.1.2-1.2-.2-.2-.5-.4z"/></svg><span class="sr-only">WhatsApp</span></a>
+          </div>
+
+          <div class="divider"></div>
+
+          <small class="muted">
+            Dica: use um link do tipo wa.me/SEUNUMERO (sem espaços) ou link do WhatsApp Business.
+          </small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="muted">© <span id="year"></span> Dênia Virgínia • Psicóloga Clínica</span>
+      <a class="muted footer__link" href="#inicio">Voltar ao topo</a>
+    </div>
+  </footer>
+</body>
+</html>
